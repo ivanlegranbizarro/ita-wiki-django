@@ -51,7 +51,7 @@ La API también cuenta con un esquema generado automáticamente por drf-spectacu
 
 1.  Clona el repositorio en tu ordenador:
 
-    `git clone https://github.com/tu_usuario/tu_repositorio.git`
+    `git clone https://github.com/ivanlegranbizarro/ita-wiki-django.git`
 
 2.  Crea un entorno virtual para el proyecto:
 
