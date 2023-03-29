@@ -2,6 +2,8 @@
 
 Esta API Restful fue creada con el objetivo de permitir a los alumnos de It Academy compartir recursos y conocimientos sobre diferentes temas, organizados en categorías y temas específicos.
 
+(Disclaimer: esta Api es solo un divertimento como programador. La It Academy no me ha encargado que haga semejante cosa; es solo un reto que me he planteado yo)
+
 ## Tecnologías utilizadas
 
 -   Python
