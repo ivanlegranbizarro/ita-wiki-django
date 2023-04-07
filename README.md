@@ -31,8 +31,6 @@ La API cuenta con los siguientes endpoints:
 
 La API utiliza autenticación basada en tokens JWT (JSON Web Tokens), los cuales se obtienen al hacer una petición de inicio de sesión a `api/users/login`. Para acceder a los endpoints protegidos, es necesario incluir el token JWT en la cabecera de la petición, de la siguiente manera:
 
-makefileCopy code
-
 `Authorization: Bearer <token>`
 
 El token puede ser renovado con la petición a `api/users/refresh`.
