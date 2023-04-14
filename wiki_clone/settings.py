@@ -135,5 +135,7 @@ SPECTACULAR_SETTINGS = {
     'TITLE': 'Clon IT Academy Wiki',
     'DESCRIPTION': 'Esto es solo un clon de la wiki de IT Academy totalmente inventado y hecho solamente para demostrar el uso de Django Rest Framework y Swagger',
     'VERSION': '1.0.0',
-    'SERVE_INCLUDE_SCHEMA': False,
+    "SWAGGER_UI_SETTINGS": {
+        "tagsSorter": "alpha"
+    },
 }
