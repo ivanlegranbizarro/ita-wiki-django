@@ -1,13 +1,14 @@
+from drf_spectacular.utils import extend_schema
 from rest_framework import generics, status
-from rest_framework.permissions import AllowAny
+from rest_framework.permissions import AllowAny, IsAdminUser
 from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import AccessToken, RefreshToken
-from rest_framework.permissions import IsAdminUser
 
 from .models import User
 from .serializers import CreateUserSerializer, UserSerializer
 
 
+@extend_schema(tags=["users"])
 class RegisterUserView(generics.CreateAPIView):
     serializer_class = CreateUserSerializer
     permission_classes = [AllowAny]
@@ -28,6 +29,7 @@ class RegisterUserView(generics.CreateAPIView):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
+@extend_schema(tags=["users"])
 class AdminUserView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = UserSerializer
     queryset = User.objects.all()
